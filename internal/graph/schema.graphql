@@ -1,0 +1,13 @@
+type Restaurant {
+    id: String!
+    name: String!
+    updated_at: String!
+}
+
+type Query {
+    fetchRestaurant(id: String): Restaurant
+}
+
+type Mutation {
+    createRestaurnat(name: String!): Restaurant!
+}
